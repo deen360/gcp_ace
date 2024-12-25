@@ -114,5 +114,5 @@ gcloud compute forwarding-rules create $FIREWALL_NAME \
 
 # List all forwarding rules to verify configuration
 gcloud compute forwarding-rules list
-```
+
 
