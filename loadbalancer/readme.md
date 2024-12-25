@@ -1,6 +1,8 @@
 ### To deploy the load balancer on google cloud use the SSH on the gcp console 
 
 curl -LO raw.githubusercontent.com/deen360/gcp_ace/blob/main/loadbalancer/loadbalancer.sh
+sudo chmod +x loadbalancer.sh
+./loadbalancer.sh -LO raw.githubusercontent.com/deen360/gcp_ace/blob/main/loadbalancer/loadbalancer.sh
 
 
 # Steps in the sh file
