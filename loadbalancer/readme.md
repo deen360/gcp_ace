@@ -1,10 +1,10 @@
 ### To deploy the load balancer on google cloud use the SSH on the gcp console 
 
-curl -LO https://raw.githubusercontent.com/deen360/gcp_ace/main/loadbalancer/loadbalancer.sh \n
-sudo chmod +x loadbalancer.sh \n
-./loadbalancer.sh
+curl -LO https://raw.githubusercontent.com/deen360/gcp_ace/main/loadbalancer/loadbalancer.sh . 
+sudo chmod +x loadbalancer.sh . 
+./loadbalancer.sh .
 
-
+***
 # Steps in the sh file
 1. Display messages prompting the user to export values.  
 2. Prompt the user to input `INSTANCE_NAME`, `FIREWALL_NAME`, and `ZONE`.  
