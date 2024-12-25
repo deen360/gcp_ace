@@ -41,7 +41,9 @@ gcloud compute instances create $INSTANCE_NAME \
 # --type=LoadBalancer \
 # --port $PORT
   
-# Create a startup script for instances in the template
+#start up script option 1
+# Create a startup script for instances in the template can also be apache 
+
 cat << EOF > startup.sh
 #! /bin/bash
 apt-get update
@@ -49,6 +51,16 @@ apt-get install -y nginx
 service nginx start
 sed -i -- 's/nginx/Google Cloud Platform - '"\$HOSTNAME"'/' /var/www/html/index.nginx-debian.html
 EOF
+
+#0R 
+# sttart up script option 2 
+# Create a startup script for instances in the template can also be apache 
+#cat << EOF > startup.sh
+#sudo apt update && sudo apt -y install apache2
+#sudo systemctl status apache2
+#echo ' <! doctype html><html><body><h1> Welcome to BCReddy Youtube Channel from webserver </h1></body></html>'
+#sudo tee /var/www/html/index.html
+
 
 # Create an instance template with the startup script
 gcloud compute instance-templates create web-server-template \
