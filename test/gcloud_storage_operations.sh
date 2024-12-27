@@ -35,7 +35,7 @@ gcloud storage ls -l gs://$BUCKET_NAME/ada.jpg
 gsutil acl ch -u AllUsers:R gs://$BUCKET_NAME/ada.jpg
 
 # Remove public read access for the image
-#gsutil acl ch -d AllUsers gs://$BUCKET_NAME/ada.jpg
+gsutil acl ch -d AllUsers gs://$BUCKET_NAME/ada.jpg
 
 # Delete the image from the bucket
-#gcloud storage rm gs://$BUCKET_NAME/ada.jpg
+gcloud storage rm gs://$BUCKET_NAME/ada.jpg
