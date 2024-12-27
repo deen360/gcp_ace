@@ -1,9 +1,10 @@
+### To deploy the App development environment on google cloud use the SSH on the gcp console
 curl -LO raw.githubusercontent.com/quiccklabs/Labs_solutions/master/Set%20Up%20an%20App%20Dev%20Environment%20on%20Google%20Cloud%20Challenge%20Lab/quicklabgsp315.sh
 sudo chmod +x quicklabgsp315.sh
 ./quicklabgsp315.sh
 
 
-###Steps in the sh file
+### Steps in the sh file
 
 1. Print empty lines to improve readability in the terminal.
 
